@@ -1,0 +1,432 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Meddon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    position: fixed;
+    width: 98%;
+    justify-content: space-between;
+    justify-self: center;
+    padding: 12px 90px 10px 90px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+nav .logo{
+  font-family: "Agbalumo", system-ui;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(142, 18, 224);;
+    cursor: pointer;
+    margin-top: -2px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+ul a{
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style:normal;
+    text-decoration:none;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-top: 8px;
+}
+ul a:hover{
+    cursor: pointer;
+}
+.introduction{
+    padding: 10px 120px 60px 100px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    z-index: 1;
+}
+.first-paragraph{
+    font-size: 17px;
+}
+.intro-left{
+    display: flex;
+    font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+    font-size: 26px;
+    flex-direction:column;
+    color: rgb(0, 0, 0);
+    cursor :default;
+    align-self: center;
+}
+.intro-left span{
+    color: rgb(142, 18, 224);
+}
+.second-paragraph{
+    margin:13px 0 12px 0;
+    font-size: 18px;
+}
+.intro-left b{
+    font-size: 70px;
+}
+.intro-left a{
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px 10px 12px 10px;
+}
+.nav-button a:hover{
+    cursor: pointer;
+}
+.touch{
+    background-color: rgb(142, 18, 224);
+    color: white;
+    border: 0px solid transparent;
+    border-radius: 5px;
+}
+.project{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.intro-right{
+    align-self: center;
+}
+.intro-right img{
+    height: auto;
+    width: 28vw;
+    border: 1px solid rgb(142, 18, 224);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    padding: 20px;
+}
+#services{
+    padding: 35px;
+}
+.flex-body{
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+}
+.fence1{
+    grid-column: 1/3;
+}
+.fence4{
+    grid-column: 2/4;
+}
+.fence{
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #E5E5EA;
+}
+#services h1{
+    color: #000000;
+    font-size: 40px;
+    padding-left: 30px;
+}
+.fence img{
+    height: 180px;
+}
+#projects{
+    padding: 40px;
+    background-color: #f7f7f7;
+    color: #0a0000;
+}
+#projects h1{
+    color: #000000;
+    font-size: 40px;
+    padding-left: 30px;
+}
+.pro{
+    position:relative;
+    width: 100%;
+    height: 270px;
+    display: flex;
+    justify-self: center;
+    flex-direction: row;
+    padding: 10px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.contain-projects{
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    gap: 30px;
+}
+.pro img{
+    height: 80%;
+    width: 280px;
+    margin:25px 20px 0 20px;
+    border-radius: 10px;
+}
+.pro .undo{
+    width: 100px;
+}
+.pro .undo:hover{
+    background-color: #ccc;
+}
+.explanation{
+    border-left: 3px solid rgb(142, 18, 224);
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.explanation ul{
+    list-style: none;
+    display: flex;
+    padding:19px 0 17px 0;
+    gap: 10px;
+}
+.explanation ul li{
+    border-radius: 6px;
+    width: 3.9rem;
+    height: 1.4rem;
+    text-align: center;
+    align-content: center;
+    background-color: rgb(0, 0, 0);
+    color: #ffff;
+}
+.pro button{
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    padding: 5px 0 5px 0;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    background-color: rgb(142, 18, 224);
+    color: white;
+    border-radius: 4px;
+    border: 0px solid transparent;
+    &:hover{
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+}
+.pro h3{
+    padding: 20px 0 10px 0;
+}
+#skills{
+      padding: 40px;
+    background-image: url("images/tabl.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#skills h1{
+    color: #0a0000;
+    font-size: 40px;
+    padding-left: 30px;
+}
+#skills span{
+    color: rgb(142, 18, 224);
+}
+.cskills{
+    display: grid;
+    justify-self: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px;
+    margin: 20px 0 0 70px;
+}
+.cskills p{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 900;
+}
+.cskills ul{
+    list-style: none;
+    font-size: 14px;
+}
+.cskills ul li{
+    margin-bottom: 6px;
+}
+#about{
+      padding: 40px;
+    color: rgb(0, 0, 0);
+}
+#about h1{
+    font-size: 40px;
+    padding-left: 30px;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    text-decoration-color: rgb(142, 18, 224);
+}
+#about span{
+    text-align: center;
+  font-size: 20px;
+  font-style:normal;
+  margin-left: 20px;
+}
+.grid-about{
+    grid-row: 1;
+    grid-column: 1/4;
+}
+#contact{
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+#contact h1{
+    color: #000000;
+}
+#contact a{
+    margin-left: 20px;
+}
+@media  screen and (max-width:320px) {
+    nav{
+        max-width: 100%;
+        justify-self: center;
+        padding: 10px;
+        font-size: 15px;
+    }
+   .introduction{
+    display: flex;
+    flex-direction: column-reverse;
+   }
+   #services{
+    max-width: 100%;
+    justify-self: center;
+   }
+   .flex-body{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+   }
+   .fence{
+    max-width: 100%;
+   }
+   .pro{
+    position:relative;
+    width: 100%;
+    height:fit-content;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+}
+.explanation{
+    border-top: 3px solid rgb(142, 18, 224);
+    border-left: 0px;
+}
+.pro img{
+    height: auto;
+    width: 80%;
+    align-self: center;
+    margin:20px;
+    border-radius: 10px;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+}
+#about img{
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    align-self: center;
+    padding: 4px;
+    border: 1px solid rgb(142, 18, 224);
+}
+.overlay{
+    display: none;
+}
+.cskills{
+    display:flex;
+    gap: 20px;
+    align-self: center;
+}
+}
+@media  screen and (max-width:760px) {
+    nav{
+        max-width: 100%;
+        justify-self: center;
+        padding: 10px;
+    }
+   .introduction{
+    padding-top:50px;
+    display: flex;
+    flex-direction: column-reverse;
+   }
+   .intro-right img{
+     width: 100%;
+        height: auto;
+        justify-self: center;
+   }
+   #services{
+    max-width: 100%;
+    justify-self: center;
+   }
+   .flex-body{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+   }
+   .fence{
+    max-width: 100%;
+   }
+   .pro{
+    position:relative;
+    width: 100%;
+    height:fit-content;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+}
+.explanation{
+    border-top: 3px solid rgb(142, 18, 224);
+    border-left: 0px;
+}
+.pro img{
+    height: auto;
+    width: 80%;
+    align-self: center;
+    margin:20px;
+    border-radius: 10px;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+}
+#about img{
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    align-self: center;
+    padding: 4px;
+    border: 1px solid rgb(142, 18, 224);
+}
+.overlay{
+    display: none;
+}
+.cskills{
+    display:flex;
+    gap: 20px;
+    align-self: center;
+}
+}
+html {
+    scroll-behavior: smooth;
+}
