@@ -9,7 +9,7 @@
 nav{
     display: flex;
     position: fixed;
-    width: 98%;
+    width: 89%;
     justify-content: space-between;
     justify-self: center;
     padding: 12px 90px 10px 90px;
@@ -428,6 +428,7 @@ ul a:hover{
 html {
     scroll-behavior: smooth;
 }
+
 
 
 
