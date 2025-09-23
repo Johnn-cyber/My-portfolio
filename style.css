@@ -434,6 +434,10 @@ ul a:hover{
     font-size: 30px;
     padding-left: 10px;
 }
+#contact h1{
+    font-size: 30px;
+    padding-left: 10px;
+    }
 #projects h1{
     font-size: 30px;
     padding-left: 10px;
@@ -466,3 +470,4 @@ ul a:hover{
 html {
     scroll-behavior: smooth;
 }
+
