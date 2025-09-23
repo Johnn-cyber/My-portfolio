@@ -9,11 +9,12 @@
 nav{
     display: flex;
     position: fixed;
-    width: 89%;
+    width: 98%;
     justify-content: space-between;
     justify-self: center;
     padding: 12px 90px 10px 90px;
     background-color: rgb(255, 255, 255);
+    z-index: 3;
 }
 nav .logo{
   font-family: "Agbalumo", system-ui;
@@ -50,6 +51,7 @@ ul a:hover{
     display: flex;
     justify-content: space-between;
     height: 100vh;
+    z-index: 1;
 }
 .first-paragraph{
     font-size: 17px;
@@ -299,7 +301,13 @@ ul a:hover{
     }
    .introduction{
     display: flex;
+    justify-content: space-around;
     flex-direction: column-reverse;
+   }
+    .intro-right img{
+     width: 100%;
+        height: auto;
+        justify-self: center;
    }
    #services{
     max-width: 100%;
@@ -428,7 +436,3 @@ ul a:hover{
 html {
     scroll-behavior: smooth;
 }
-
-
-
-
